@@ -8,4 +8,4 @@ def test_cli_run_we_worker():
 
     result = runner.invoke(app, ["--help"])
     assert result.exit_code == 0
-    assert "number of worker processes" in result.stdout
+    assert "--num-procs" in result.stdout
