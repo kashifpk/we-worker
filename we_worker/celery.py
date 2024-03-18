@@ -1,7 +1,7 @@
 from celery import Celery
 
 from .settings import get_settings
-from .worker import run_worker
+from .worker import run_worker  # noqa: F401
 
 settings = get_settings()
 

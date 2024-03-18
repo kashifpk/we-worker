@@ -1,0 +1,14 @@
+ENVIRONMENT=development
+
+# Workflow executor related config
+broker_url=amqp://guest:guest@localhost:5672/
+exchange=we
+exchange_type=topic
+
+task_requests_queue=task_requests
+task_results_queue=task_results
+
+task_start_routing_key=task.start
+
+# celery related config
+worker_prefetch_multiplier=1
